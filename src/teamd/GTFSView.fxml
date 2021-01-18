@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="192.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teamd.Controller">
+   <children>
+       <Button mnemonicParsing="false" onAction="#chooseDirectory" prefHeight="25.0" prefWidth="197.0" text="Import Files" />
+       <Button fx:id="exportButton" disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#chooseDirectory" prefHeight="25.0" prefWidth="194.0" text="Export Files" />
+       <Button fx:id="updateAttributesButton" onAction="#updateAttribute" disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="195.0" text="Update Attributes" />
+       <Button fx:id="tripsPerStopButton" disable="true" mnemonicParsing="false" onAction="#displayTripsPerStop" prefHeight="25.0" prefWidth="199.0" text="Display number of trips per stop" />
+       <Button fx:id="nextTripButton" disable="true" mnemonicParsing="false" onAction="#displayNextTrip" prefHeight="25.0" prefWidth="202.0" text="Display Future Trips via a Stop" />
+       <Button fx:id="allRoutesButton" disable="true" mnemonicParsing="false" onAction="#displayAllRoutes" prefHeight="25.0" prefWidth="208.0" text="Display All Routes" />
+       <Button fx:id="allStopsButton" disable="true" mnemonicParsing="false" onAction="#displayAllStops" prefHeight="25.0" prefWidth="198.0" text="Display All Stops" />
+       <Button fx:id="displayFutureTripsGivenRouteID" disable="true" mnemonicParsing="false" onAction="#displayFutureTripsGivenRouteID" prefHeight="25.0" prefWidth="198.0" text="Display Future Trips via a Route" />
+   </children>
+</VBox>
